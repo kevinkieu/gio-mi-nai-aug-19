@@ -23,7 +23,7 @@ AUCH_ENABLE = os.getenv("AUCH_ENABLE", "1")
 GROUP_MODE = os.getenv("GROUP_MODE=", "1")
 
 #After setting up 3 rounds of dialogue, prompt the user to start a new dialogue
-prompt_new_threshold = int(3)
+prompt_new_threshold = int(16)
 
 #The default prompt when the photo has no accompanying text
 defaut_photo_caption = "describe this picture"
@@ -59,7 +59,10 @@ send_unrecognized_content = "Send unrecognized content"
 
 """ read https://ai.google.dev/api/rest/v1/GenerationConfig """
 generation_config = {
-    "max_output_tokens": 1024,
+    "temperature": 0.95,
+    "top_p": 0.95,
+    "top_k": 64,
+    "max_output_tokens": 8192,
 }
 
 """ read https://ai.google.dev/api/rest/v1/HarmCategory """
