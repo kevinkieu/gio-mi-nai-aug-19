@@ -38,8 +38,8 @@ command_invalid_error_info = "Invalid command, use /help for help"
 user_no_permission_info = "You are not allowed to use this bot."
 group_no_permission_info = "This group does not have permission to use this robot."
 gemini_err_info = f"Something went wrong!\nThe content you entered may be inappropriate, please modify it and try again"
-new_chat_info = "Thà là bỏ đi hết ta mần lại từ đầu..."
-prompt_new_info = "Type /new to kick off a new chat."
+new_chat_info = "Thà là bỏ đi hết ta mần lại từ đầu...ố dè."
+prompt_new_info = "gõ /new để xóa hết dĩ vãng nha."
 unable_to_recognize_content_sent = "The content you sent is not recognized!"
 
 """ Below is some text related to the log """
@@ -59,10 +59,10 @@ send_unrecognized_content = "Send unrecognized content"
 
 """ read https://ai.google.dev/api/rest/v1/GenerationConfig """
 generation_config = {
-    "temperature": 1.15,
+    "temperature": 1,
     "top_p": 0.95,
     "top_k": 61,
-    "max_output_tokens": 2708,
+    "max_output_tokens": 2000,
 }
 
 """ read https://ai.google.dev/api/rest/v1/HarmCategory """
