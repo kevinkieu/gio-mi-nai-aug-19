@@ -7,8 +7,11 @@ from .config import GOOGLE_API_KEY, generation_config, safety_settings, gemini_e
 
 genai.configure(api_key=GOOGLE_API_KEY[0])
 
+huongdan="As a Sales Manager with 10 years of experience as a Sales Director and 5 years as a CEO, you have a strong skill in individual consulting and excel in creating reports, plans, and sales and marketing strategies."
+
 model_usual = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
+    system_instruction=huongdan,
     generation_config=generation_config,
     safety_settings=safety_settings)
 
