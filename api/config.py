@@ -26,7 +26,7 @@ GROUP_MODE = os.getenv("GROUP_MODE=", "1")
 prompt_new_threshold = int(16)
 
 #The default prompt when the photo has no accompanying text
-defaut_photo_caption = "describe this picture"
+defaut_photo_caption = "describe this picture, output in Vietnamese."
 
 """ Below is some text related to the user """
 help_text = "You can send me text or pictures. When sending pictures, please include the text in the same message.\nTo use the group please @bot or reply to any message sent by the bot"
@@ -38,7 +38,7 @@ command_invalid_error_info = "Invalid command, use /help for help"
 user_no_permission_info = "You are not allowed to use this bot."
 group_no_permission_info = "This group does not have permission to use this robot."
 gemini_err_info = f"Something went wrong!\nThe content you entered may be inappropriate, please modify it and try again"
-new_chat_info = "We're having a fresh chat."
+new_chat_info = "Thà là bỏ đi hết ta mần lại từ đầu..."
 prompt_new_info = "Type /new to kick off a new chat."
 unable_to_recognize_content_sent = "The content you sent is not recognized!"
 
@@ -62,7 +62,7 @@ generation_config = {
     "temperature": 1.15,
     "top_p": 0.95,
     "top_k": 61,
-    "max_output_tokens": 3000,
+    "max_output_tokens": 3800,
 }
 
 """ read https://ai.google.dev/api/rest/v1/HarmCategory """
