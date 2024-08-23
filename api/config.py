@@ -62,7 +62,7 @@ generation_config = {
     "temperature": 1.15,
     "top_p": 0.95,
     "top_k": 61,
-    "max_output_tokens": 3800,
+    "max_output_tokens": 3200,
 }
 
 """ read https://ai.google.dev/api/rest/v1/HarmCategory """
