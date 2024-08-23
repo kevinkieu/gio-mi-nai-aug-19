@@ -59,10 +59,10 @@ send_unrecognized_content = "Send unrecognized content"
 
 """ read https://ai.google.dev/api/rest/v1/GenerationConfig """
 generation_config = {
-    "temperature": 0.95,
-    "top_p": 0.95,
+    "temperature": 1.15,
+    "top_p": 1,
     "top_k": 64,
-    "max_output_tokens": 8192,
+    "max_output_tokens": 4096,
 }
 
 """ read https://ai.google.dev/api/rest/v1/HarmCategory """
