@@ -12,7 +12,7 @@ ALLOWED_USERS = split(r'[ ,;，；]+', os.getenv("ALLOWED_USERS", '').replace("@
 ALLOWED_GROUPS = split(r'[ ,;，；]+', os.getenv("ALLOWED_GROUPS", '').replace("@", "").lower())
 
 #Whether to push logs and enable some admin commands
-IS_DEBUG_MODE = os.getenv("IS_DEBUG_MODE", '1')
+IS_DEBUG_MODE = os.getenv("IS_DEBUG_MODE", '0')
 #The target account that can execute administrator instructions and log push can use /get_my_info to obtain the ID.
 ADMIN_ID = os.getenv("ADMIN_ID", "905667090")
 
