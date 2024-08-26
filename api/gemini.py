@@ -29,7 +29,7 @@ def list_models() -> None:
 def generate_content(prompt: str) -> str:
     """generate text from prompt"""
     try:
-        response = model_usual.generate_content(prompt)
+        response = model_usual.generate_content(prompt, stream=True)
         result = response.text
     except Exception as e:
         result = f"{gemini_err_info}\n{repr(e)}"
