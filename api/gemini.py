@@ -29,11 +29,18 @@ def list_models() -> None:
 def generate_content(prompt: str) -> str:
     """generate text from prompt"""
     try:
-        response = model_usual.generate_content(prompt)
+        response = model_usual.generate_content(
+            prompt, 
+            stream=True,)
         result = response.text
     except Exception as e:
         result = f"{gemini_err_info}\n{repr(e)}"
     return result
+    
+for chunk in response:
+        for i in range(0, len(chunk.text), 10):
+            section = chunk.text[i:i + 10]
+            time.sleep(0.01)
 
 
 def generate_text_with_image(prompt: str, image_bytes: BytesIO) -> str:
