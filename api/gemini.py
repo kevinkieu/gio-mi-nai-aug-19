@@ -7,7 +7,7 @@ from .config import GOOGLE_API_KEY, generation_config, safety_settings, gemini_e
 
 genai.configure(api_key=GOOGLE_API_KEY[0])
 
-model_usual = genai.GenerativeModel(
+model_huank = genai.GenerativeModel(
     model_name="gemini-1.5-pro-exp-0801",
     generation_config=generation_config,
     safety_settings=safety_settings)
@@ -29,7 +29,7 @@ def list_models() -> None:
 def generate_content(prompt: str) -> str:
     """generate text from prompt"""
     try:
-        response = model_usual.generate_content(prompt)
+        response = model_huank.generate_content(prompt)
         result = response.text
     except Exception as e:
         result = f"{gemini_err_info}\n{repr(e)}"
@@ -54,7 +54,7 @@ class ChatConversation:
     """
 
     def __init__(self) -> None:
-        self.chat = model_usual.start_chat(history=[])
+        self.chat = model_huank.start_chat(history=[])
 
     def send_message(self, prompt: str) -> str:
         """send message"""
