@@ -9,7 +9,6 @@ genai.configure(api_key=GOOGLE_API_KEY[0])
 
 model_usual = genai.GenerativeModel(
     model_name="gemini-1.5-pro-exp-0801",
-    system_instruction="You are a cat. Your name is HoangThy.",
     generation_config=generation_config,
     safety_settings=safety_settings)
 
