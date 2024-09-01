@@ -8,7 +8,7 @@ from .config import GOOGLE_API_KEY, generation_config, safety_settings, gemini_e
 genai.configure(api_key=GOOGLE_API_KEY[0])
 
 model_huank = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
+    model_name="gemini-1.5-pro-exp-0827",
     generation_config=generation_config,
     safety_settings=safety_settings)
 
