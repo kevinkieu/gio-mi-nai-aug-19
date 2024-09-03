@@ -27,7 +27,7 @@ def send_imageMessage(chat_id, text, imageID):
     """send image message"""
     payload = {
         "chat_id": chat_id,
-        "caption": text,
+        "caption": escape(text),
         "parse_mode": "MarkdownV2",
         "photo": imageID
     }
