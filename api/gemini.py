@@ -13,7 +13,6 @@ model_huank = genai.GenerativeModel(
     model_name="gemini-1.5-pro-exp-0827",
     generation_config=generation_config,
     safety_settings=safety_settings,
-    system_instruction=gemini_system_prompt,
     )
 
 model_vision = genai.GenerativeModel(
